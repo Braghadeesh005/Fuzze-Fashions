@@ -1,0 +1,1077 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.home-slogan{
+    background-color: rgb(29, 29, 31);
+    height: 70px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.16em;
+}
+.home-slogan-text{
+  letter-spacing: 5px;
+}
+/* --------------------------------------------panel 1------------------------------------------------------------- */
+
+  .panel1{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+  }
+  .logo-div{
+    text-align: center;
+  }
+  .logo1{
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 75px;
+    width: 90px;
+  }
+
+  /* fuzze text animation */
+  .home_title {
+    padding: 30px;
+    font-family: monospace;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .h1 {
+    font-size: 190px;
+    @media (max-width: 600px) {
+      font-size: 70px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  .text-shadow {
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 10px green;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    letter-spacing: 0.1em;
+    animation: flicker 0.5s ease-in-out infinite alternate;
+    &:hover {
+      color:green;
+    }
+  }
+  @keyframes flicker {
+    0% {
+      opacity: 0.5;
+      text-shadow: 2px 2px 10px greeen;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 2px 2px 20px green;
+    }
+  }
+  
+  /* .fuzze{
+    margin: 0 auto;
+    position: relative;
+    margin-top:-170px;
+    margin-bottom: 100px;
+    position: relative;
+    font-size: 30px;
+    text-shadow: 4px 4px 6px #5ca176;
+  }
+  .content {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  .content h2 {
+    color: #fff;
+    font-size: 8em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #0a7a35;
+  }
+  .content h2:nth-child(2) {
+    color: #0a7a35;
+    animation: animate 4s ease-in-out infinite;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  } */
+
+
+  /* scroll animation */
+  .scroll-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .scroll-content {
+    display: flex;
+    animation: scrollAnimation 10s linear infinite;
+  }
+  .scroll-content a {
+    flex: 0 0 auto;
+    margin-right: 80px;
+  }
+  .slider {
+    background-color: #04682d;
+    height: 300px;
+    width: 180px;
+  }
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .explore-div{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .explore{
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #0a7a35;
+    letter-spacing: 0.3em;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    border-color:#0a7a35;
+    border: solid 2px;
+    background-color: black;
+    transition: background-color 0.3s ease-in;
+  }
+
+  .explore:hover{
+    background-color:#0a7a35;
+    border-color: #0a7a35;
+    color: rgb(0, 0, 0);
+  }
+
+  
+
+ /* ------------------------------------------------------ panel 2 -------------------------------------------------------- */
+  .panel2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+  }
+  .p2-title{
+    padding-top: 50px;
+    color: rgb(49, 52, 50);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: oblique;
+    text-transform: uppercase;
+  }
+  .p2-content{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-left: 240px;
+    margin-top: -30px;
+  }
+  .card-outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 100px;
+    gap: 50px;
+    
+  }
+
+  .card {
+    
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(163deg, #244533 0%, #02342f 100%);
+    border-radius: 10px;
+    transition: all .3s;
+   }
+   
+   .card2a {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/gif1.gif);
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    transition: all .2s;
+    box-shadow: 0 0 10px #ffffff;
+    animation: glow1 1s infinite alternate;
+    position: absolute;
+   }
+   
+
+   .card2b {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/gif2.gif);
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    transition: all .2s;
+    box-shadow: 0 0 10px #ffffff;
+    animation: glow1 1s infinite alternate;
+    position: absolute;
+   }
+   
+
+   .card2c {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(images/gif3.gif);
+    background-position: center;
+    background-size: cover;
+    background-color: #1a1a1a;
+    transition: all .2s;
+    box-shadow: 0 0 10px #ffffff;
+    animation: glow1 1s infinite alternate;
+    position: absolute;
+   }
+
+   .card-title{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-left: 60px;
+    color: #000000;
+    margin-top: 350px;
+
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+   }
+
+
+
+
+
+/* -------------------------------------------------------------------------- panel 3 --------------------------------------------------------------------- */
+
+
+.panel3{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.p3-title{
+  color: rgb(63, 64, 64);
+  font-family:monospace;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: oblique;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.modals{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+.mod1{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-image: url(images/case1.jpeg);
+  background-size: cover;
+  background-color: rgb(29, 29, 31);
+  border-radius: 10px;
+  background-position:center;
+  box-shadow: 0 0 10px #474747;
+  animation: glow 1s infinite alternate;
+}
+.mod2{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-image: url(images/case3.jpeg);
+  background-position:center;
+  background-size: cover;
+  background-color: rgb(29, 29, 31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #474747;
+  animation: glow 1s infinite alternate;
+}
+.mod3{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-image: url(images/case5.jpeg);
+  background-size: cover;
+  background-position:center;
+  background-clip: padding-box;
+  background-color: rgb(29, 29, 31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #474747;
+  animation: glow 1s infinite alternate;
+}
+.mod4{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-image: url(images/case2.jpeg);
+  background-size: cover;
+  background-position:center;
+  background-clip: padding-box;
+  background-color: rgb(29, 29, 31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #474747;
+  animation: glow 1s infinite alternate;
+}
+
+.mod5{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-image: url(images/case6.jpg);
+  background-size: cover;
+  background-position:center;
+  background-clip: padding-box;
+  background-color: rgb(29, 29, 31);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #474747;
+  animation: glow 1s infinite alternate;
+}
+.modal-btn{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 50px;
+  border: solid black 3px;
+  border-color: rgb(0, 0, 0);
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  float:right;
+  background-color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.1em;
+  border-radius: 10px;
+}
+.modal-btn:hover{
+  background: none;
+  color: rgb(0, 0, 0);
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #8a8787;
+  }
+  100% {
+    box-shadow: 0 0 20px #373837;
+  }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- Style the modal --------------------------------------------------------------------------------*/
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.10s, visibility 0.33s;
+}
+
+
+/* Style the modal content */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  
+  margin: 100px;
+  border-radius: 20px;
+  border: solid rgb(29, 93, 53) 2px;
+  opacity: 0.5;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+  padding-bottom: 50px;
+}
+
+/* Style the close button */
+.close {
+  color: #04682d;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Show the modal when it's open */
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active .modal-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.modal-1{
+  display: flex;
+  
+}
+.mod-1-left, .mod-1-right{
+  flex: 1;
+}
+.mod-1-right{
+  text-align: center;
+}
+.mod-1-left{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.mod-1-title{
+  text-align: center;
+  font-family: monospace;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.mod-1-content{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: white;
+  text-align: justify;
+}
+
+.mod-1-left-item{
+  height: 400px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #474747;
+  
+}
+
+
+.visit{
+ 
+  height: 60px;
+  width: 150px;
+  background-color: #1d1c1c;
+  border-color: #0a7a35;
+  color: #0a7a35;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  letter-spacing: 0.2em;
+  border-radius: 30px;
+  border: solid 2px;
+  transition: background-color 0.3s ease-in;
+}
+.visit:hover{
+  background-color: #0a7a35;
+  color: #1d1c1c;
+  border-color: #0a7a35;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------ panel 4 ------------------------------------------------------------ */
+
+
+
+.panel4{
+  background-color: rgb(29, 29, 31);
+  display: flex;
+  flex-direction: column;
+
+}
+.types{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+.type1{
+  position: relative;
+  height: 600px;
+  width: 700px;
+  border-radius: 10px;
+  background-image: url(images/glass-case.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px #ffffff;
+  animation: glow1 1s infinite alternate;
+}
+.type2{
+  position: relative;
+  height: 600px;
+  width: 700px;
+  border-radius: 10px;
+  background-image: url(images/silicone.jpg);
+  box-shadow: 0 0 10px #ffffff;
+  animation: glow1 1s infinite alternate;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes glow1 {
+  0% {
+    box-shadow: 0 0 10px #f5f5f5;
+  }
+  100% {
+    box-shadow: 0 0 20px #373837;
+  }
+}
+.p4-text{
+  background-color: rgba(255, 255, 255,0.4);
+  border-radius: 10px 10px 5px 5px;
+  font-family:monospace;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+}
+.buynow{
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  height: 55px;
+  width: 160px;
+  background-color: rgba(255, 255, 255,0.4);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-family: monospace;
+  border-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.buynow:hover{
+  background-color: rgb(0, 0, 0);
+  color:rgb(255, 255, 255) ;
+}
+
+
+
+/* ------------------------------------------------------------------------------panel 5 -------------------------------------------------------------------------- */
+
+.p3-title-2{
+  background-color: #000;
+}
+.panel5{
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+}
+.p5-text{
+  color: rgb(6, 92, 49);
+  font-family: sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  font-style: oblique;
+  padding-left: 40px;
+}
+.p5-img{
+  width: 100%;
+}
+
+
+/* ------------------------------------------------------- panel 6 -------------------------------------------------------------------------------------- */
+
+/* .panel6a{
+  background-color: #000;
+} */
+.random{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  background-image: url(images/random2.jpg);
+  background-size: 100%;
+  background-size: cover;
+  font-family:monospace;
+  font-weight: 600;
+  color:  black;
+  font-size: 72px;
+  padding-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+}
+.random-btn{
+  
+  font-size: 16px;
+  height: 55px;
+  width: 160px;
+  color:white;
+  background-color: black;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  border-radius: 10px;
+  border-color:rgb(239, 155, 38);
+  cursor: pointer;
+}
+.anime{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  background-image: url(images/anime2.jpg);
+  background-size: 100%;
+  background-size: cover;
+  font-family:monospace;
+  font-weight: 600;
+  color:  black;
+  font-size: 72px;
+  padding-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 3px;
+}
+.anime-cover{
+  height: 500px;
+  width: 450px;
+  margin-left: 400px;
+  margin-top: -150px;
+  transform: rotate(15deg);
+}
+.anime-btn{
+  font-size: 16px;
+  height: 55px;
+  width: 160px;
+  color:white;
+  background-color: black;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  border-radius: 10px;
+  border-color:rgb(8, 148, 101);
+  cursor: pointer;
+}
+
+.marvel{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(images/marvel.jpg);
+  background-size: 100%;
+  background-size: cover;
+  font-family:monospace;
+  font-weight: 600;
+  color:  rgb(255, 255, 255);
+  font-size: 72px;
+  padding-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+}
+.marvel-btn{
+  height: 55px;
+  width: 160px;
+  color:white;
+  background-color: black;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border-color:rgb(187, 78, 231);
+  cursor: pointer;
+}
+.car{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(images/car.jpg);
+  background-size: 100%;
+  background-size: cover;
+  font-family:monospace;
+  font-weight: 600;
+  color:  rgb(255, 255, 255);
+  font-size: 72px;
+  padding-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+}
+.car-btn{
+  height: 55px;
+  width: 160px;
+  color:white;
+  background-color: black;
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border-color:rgb(54, 54, 242);
+  cursor: pointer;
+}
+
+.panel9 {
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+  background-color: rgb(29, 29, 31);
+  flex-direction: row;
+}
+
+.p9-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p9-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p9-text {
+  font-family: monospace;
+  font-size: 52px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.p9-content {
+  font-family: monospace;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+.read-more {
+  height: 55px;
+  width: 150px;
+  background:none;
+  color:white;
+  border-radius: 200px;
+  font-family: monospace;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  border-color:  white;
+  text-align: center;
+  cursor: pointer;
+}
+.read-more:hover{
+  background-color: white;
+  color: #000;
+}
+
+.made-in-india{
+  height: 500px;
+  width: 700px;
+  border-radius: 20px;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------responsive---------------------------------------------------------------------------------- */
+@media screen and (max-width : 600px) 
+{
+  .home-slogan{
+    display: none;
+  }
+  .home-slogan-text{
+    display: none;
+  }
+  .p3-title{
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .modals{
+    flex-direction: column;
+  }
+
+  .imp-title{
+    font-size: 35px !important;
+  }
+
+  .types{
+    flex-direction: column;
+  }
+
+  .type1{
+    height: 250px;
+    width: 250px;
+  }
+  .type2{
+    height: 250px;
+    width: 250px;
+  }
+
+  .p4-text{
+    font-size: 20px;
+  }
+
+  .random{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .random-btn{
+    font-size: 9px;
+    height: 35px;
+    width: 90px;
+  }
+
+  .anime{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .anime-btn{
+    font-size: 9px;
+    height: 35px;
+    width: 90px;
+  }
+
+  .marvel{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .marvel-btn{
+    font-size: 9px;
+    height: 35px;
+    width: 90px;
+  }
+
+  .car{
+    font-size: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 200px;
+  }
+  .car-btn{
+    font-size: 9px;
+    height: 35px;
+    width: 90px;
+  }
+
+  .panel9{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .p9-text{
+    font-size: 18px;
+    text-align: center;
+  }
+  .p9-content{
+    font-size: 10px;
+    
+  }
+
+  .made-in-india{
+    height: 200px;
+    width: 250px;
+  }
+
+
+  .card-outer{
+ 
+    flex-direction: column;
+    
+  }
+
+  .card {
+    
+    width: 200px;
+    height: 200px;
+    
+   }
+   
+   .card2a {
+    width: 200px;
+    height: 200px;
+   
+   }
+   
+
+   .card2b {
+    width: 200px;
+    height: 200px;
+    
+   }
+   
+
+   .card2c {
+    width: 200px;
+    height: 200px;
+    
+   }
+   
+   .p2-title{
+    font-size: 35px;
+   }
+
+   .modal-content{
+    margin: 10px;
+    padding: 5px;
+   }
+
+   .modal-1{
+    flex-direction: column;
+    gap: 50px;
+   }
+
+   .mod-1-left-item{
+    height: 180px;
+    width: 150px;
+   }
+   .mod-1-title{
+    font-size: 17px;
+  }
+  .mod-1-content{
+    font-size: 9px;
+  }
+  .mod-1-right{
+    padding-bottom: 30px;
+  }
+  .logo1{
+    margin-right: auto;
+  }
+}
+
+
+
+
+
+
+
+
+.specialproducts_panel{
+  background-color: rgb(40, 39, 39);
+  /* margin: 7px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  padding: 50px;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+.special-product-heading{
+  color: rgb(113, 111, 111);
+  background-color: rgb(40, 39, 39);
+  padding-bottom: 1px;
+}
+.special_product_indivual{
+  box-shadow: 0 0 10px #ffffff;
+  animation: glow1 1s infinite alternate;
+  padding: 5px;
+}
+.special_product_indivual_image{
+  height: 370px;
+  width: 270px;
+}
+
+@media screen and (max-width : 600px) 
+{
+  .special_product_indivual_image{
+    height: 270px;
+width: 180px;
+}
+}

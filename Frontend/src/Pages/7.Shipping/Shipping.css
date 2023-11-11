@@ -1,0 +1,218 @@
+.ship-title{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 30px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.ship-outer{
+    
+    
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ship-inputs, .ship-img{
+    flex: 1;    
+}
+.ship-inputs{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.ship-inputs-2{
+   
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ship-img{
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+   
+}
+.ship-input{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.ship-input-1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 50px;
+
+}
+.placeholder-2{
+   float: right;
+   cursor: text !important;
+}
+.placeholder1{
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    background-color: rgb(231, 226, 226);
+    border: solid 1px;
+    border: rgb(5, 82, 5);
+    color: black;
+}
+.placeholder2{
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(231, 226, 226);
+    border: solid 1px;
+    border: rgb(5, 82, 5);
+    color: black;
+}
+.ship-submit{
+    height: 55px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: rgb(3, 75, 3);
+    border: solid 2px;
+    border-color: rgb(3,75,3);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.ship-submit:hover{
+    background-color: green;
+}
+.ship-avatar{
+    height: 300px;
+    width: 300px;
+}
+
+
+
+.savings{
+    display: none;
+}
+
+.cart-items{
+    background-color: rgb(230, 232, 233);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item-indivual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.total-price{
+   
+    
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.font-price{
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.font-size-price{
+    font-size: 25px;
+}
+
+.input-span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .ship-outer{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+    }
+    .cart-items{
+        font-size: 10px;
+    }
+}
+
+/*------------------------------------sweetalert--error-----------------------------------------------------------*/
+.my-custom-popup-class-error {
+    width: 400px; /* Adjust the width as needed */
+    height: 130px;
+    background-color: black;
+  }
+  
+  /* Custom styles for the title */
+  .my-custom-title-class-error {
+    color: white; /* Change the title text color */
+    background-color: red; /* Change the title background color */
+    padding-bottom: 15px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.1em;
+  }
+  
+  /* Custom styles for the content */
+  .my-custom-content-class-error {
+    color: white; /* Change the content text color */
+    background-color: red; /* Change the content background color */
+  }
+  
+  /* Custom style for the progress bar */
+  .swal2-progress-bar {
+    color: red; /* Change the progress bar color */
+  }
+  
+  .progress-bar-error{
+    color: red;
+    background-color: red;
+  }

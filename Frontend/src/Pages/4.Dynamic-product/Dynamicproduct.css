@@ -1,0 +1,138 @@
+/* current product */
+.current_product_panel{
+  display: flex;
+  margin: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+} 
+.current_product_image{
+    height: 470px;
+    width: 320px;
+    border-radius: 2px;
+    box-shadow: rgba(18, 19, 20, 0.4) 0px 0px 0px 2px, rgba(27, 28, 29, 0.65) 0px 4px 6px -1px, rgba(25, 25, 25, 0.08) 0px 1px 0px inset;
+}
+.current_product_image_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.current_product_content_div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap:10px;
+
+}
+.current_product_content_item{
+    font-family: 'Roboto', sans-serif;
+}
+.current_product_content_item-1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.current_product_content_item-2{
+    text-align: justify;
+}
+.current_product_content_item-3 , .current_product_content_item-4 {
+    text-transform: uppercase;
+}
+.current_product_content_item-6{
+    text-decoration: line-through;
+    padding-right: 5px;
+}
+.current_product_button{
+  text-align: center;
+  letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(39, 114, 74);
+  
+}
+
+
+/* related products */
+.relatedproducts_panel{
+    margin-bottom: 100px !important;
+    margin: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 50px;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.related_product_indivual{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 5px;
+    padding-bottom: 25px;
+}
+.related_product_indivual_image{
+    height: 370px;
+    width: 270px;
+}
+
+.relatedproducts_heading{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 2px;
+}
+.related_product_indivual_content{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.related_product_indivual_content_left{
+    float: left;
+}
+.related_product_indivual_content_right{
+    float: right;
+}
+
+
+@media screen and (max-width : 600px) 
+{
+    .current_product_panel{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin: 15px;
+        flex-direction: column;
+    }
+    .current_product_image{
+        height: 400px;
+        width: 250px;
+    }
+    .current_product_content_item-1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .current_product_content_item-2{
+        text-align: center;
+    }
+    .related_product_indivual_image{
+        height: 270px;
+    width: 180px;
+    }
+    .related_product_indivual_content{
+        font-size: 10px;
+    }
+    .related_product_indivual{
+        
+        padding-bottom: 15px;
+    }
+}

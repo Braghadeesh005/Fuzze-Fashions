@@ -1,0 +1,234 @@
+.login-body{
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+
+.google-panel{
+  padding: 100px;
+  text-align: center;
+}
+.google-image{
+  margin-left: 1px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 2.5px;
+}
+
+.google-button{
+  
+  border-radius: 25px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  border: green 2px solid;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: capitalize;
+  transition: background-color 0.9s ease;
+}
+.google-button:hover{
+  background-color: rgba(38, 255, 0, 0.5);
+  box-shadow: 0 0 30px green;
+}
+
+.main-panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px;
+  padding-bottom: 0px;
+}
+
+.register-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  border: green 2px solid;
+  transition: background-color 0.9s ease;
+}
+.register-panel:hover{
+  background-color: rgba(38, 255, 0, 0.5);
+  box-shadow: 0 0 30px green;
+}
+.login-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  border: green 2px solid;
+  transition: background-color 0.9s ease;
+}
+.login-panel:hover{
+  background-color: rgba(38, 255, 0, 0.5);
+  box-shadow: 0 0 30px green;
+}
+
+.login-header{
+  font-family: 'Poiret One', cursive;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form-element{
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-input{
+  border: 1px solid green;
+  background-color: rgba(12, 12, 12,0.3);
+  color: white;
+}
+
+.form-button{
+  letter-spacing: 2px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(13, 222, 72, 0.5);
+}
+
+
+@media screen and (max-width : 600px) 
+{
+  .main-panel{
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+  .register-panel{
+    
+    padding: 10px;
+    
+  }
+  .login-panel{
+    
+    padding: 10px;
+   
+  }
+
+  .google-panel{
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .google-image{
+    margin-left: 1px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .google-button{
+    
+    border-radius: 10px;
+    
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+   
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------sweetalert--error-----------------------------------------------------------*/
+.my-custom-popup-class-error {
+    width: 400px; /* Adjust the width as needed */
+    height: 130px;
+    background-color: black;
+  }
+  
+  /* Custom styles for the title */
+  .my-custom-title-class-error {
+    color: white; /* Change the title text color */
+    background-color: red; /* Change the title background color */
+    padding-bottom: 15px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.1em;
+  }
+  
+  /* Custom styles for the content */
+  .my-custom-content-class-error {
+    color: white; /* Change the content text color */
+    background-color: red; /* Change the content background color */
+  }
+  
+  /* Custom style for the progress bar */
+  .swal2-progress-bar {
+    color: red; /* Change the progress bar color */
+  }
+  
+  .progress-bar-error{
+    color: red;
+    background-color:red;
+  }
+  
+  /*------------------------------------------------------------sweetalert2--success---------------------------------------------*/.my-custom-popup-class {
+    width: 400px; /* Adjust the width as needed */
+    height: 130px;
+    background-color: black;
+  }
+  
+  /* Custom styles for the title */
+  .my-custom-title-class {
+    color: white; /* Change the title text color */
+    background-color: green; /* Change the title background color */
+    padding-bottom: 15px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 0.1em;
+  }
+  
+  /* Custom styles for the content */
+  .my-custom-content-class {
+    color: white; /* Change the content text color */
+    background-color: green; /* Change the content background color */
+  }
+  
+  /* Custom style for the progress bar */
+  .swal2-progress-bar {
+    color: green; /* Change the progress bar color */
+  }
+  
+  .progress-bar{
+    color: green;
+    background-color: green;
+  }

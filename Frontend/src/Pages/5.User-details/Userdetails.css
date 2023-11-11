@@ -1,0 +1,155 @@
+.user_details_panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+.user_details_name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.user_details_email{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.user_details_logout_div{
+    margin-top: 20px;
+    text-align: center;
+}
+.user_details_logout_button{
+  text-decoration: none;
+  letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(39, 114, 74);
+}
+
+@media screen and (max-width : 600px) 
+{
+    .user_details_panel{
+        margin: 10px;
+        padding: 30px;
+    }
+    .user_details_name{
+        font-size: 20px;
+        text-align: center;
+    }
+    .user_details_email{
+        font-size: 15px;
+        text-align: center;
+    }
+    .user_details_logout_button{
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+.user_table_panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user_table{
+    padding: 20px;
+    border: solid black 1px;
+}
+.user_checkout_button{
+    text-decoration: none;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-weight: bolder;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(39, 114, 74);
+}
+thead{
+    text-transform: uppercase;
+}
+th , td{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr:nth-child(even) {
+    background-color: #f1f4ef;
+}
+tr:nth-child(odd) {
+    background-color: #f3f6f4;
+}
+tr:hover{
+    background-color: rgb(113, 113, 113);
+}
+.empty-user{
+    text-align: center;
+    border: solid black 2px;
+    padding: 100px;
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.user_heading{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+@media screen and (max-width : 600px) 
+{
+    .user_heading{
+        font-size: 20px;
+    }
+    th , td {
+        font-size: 8px;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .user_table{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+    .user_checkout_button{
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .empty-user{
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

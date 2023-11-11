@@ -1,0 +1,33 @@
+.terms{
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 50px;
+    margin-top: 50px;
+
+}
+.about{
+    text-align: center;
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 600;
+}
+.content{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding: 30px;   
+}
+.return-head{
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: 700;
+}

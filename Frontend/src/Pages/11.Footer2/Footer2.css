@@ -1,0 +1,230 @@
+.footer-head{
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+  .footer-head-2{
+    text-align: left;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
+  .footer-head-3{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+  .footer-content{
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .media{
+    height: 30px;
+    width: 30px;
+  }
+  .logo-footer{
+    margin-top: 1px;
+    height: 50px;
+    width:60px;
+  }
+  .in-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .logo-footer{
+    border-radius: 1%;
+  }
+  .foot-btn{
+    background:none;
+    border-color:rgb(121, 118, 118);
+    border: solid 2px;
+    height: 55px;
+    width: 400px;
+    color: #aaa6a6;
+     font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .foot-btn:hover{
+    background-color: rgb(206, 202, 202);
+    color: #000000;
+  }
+  .submit{
+    height: 50px;
+    width: 150px;
+     font-family: 'Poiret One', cursive;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: rgb(206, 202, 202);
+    border: solid 2px;
+    border-color: rgb(206, 202, 202);
+    background: none;
+    font-weight: bold;
+  }
+  .submit:hover{
+    background-color:rgb(206, 202, 202);
+    color:rgb(0, 0, 0);
+    border-color: rgb(206, 202, 202);
+  }
+  .text-area{
+    background-color: #a7a2a2;
+    border: #a7a2a2;
+    height: 100px;
+    width: 250px;
+  }
+  .text-area:hover {
+    box-shadow: 0 0 0 .15vw rgba(0, 0, 0, 0.786);
+  }
+  .text-area:focus {
+    box-shadow: 0 0 0 .15vw rgba(0, 0, 0, 0.887);
+  }
+  .text-area::placeholder{
+    text-align: center;
+    color: #000000;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-weight: bold;
+  }
+.footer_panel{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(21, 20, 20);
+    color: rgb(206, 202, 202);
+    padding: 50px;
+    font-weight: bold;
+}
+.footer_row_5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.img-flex{
+    margin-top: 20px;
+    display: flex;
+}
+.footer-outer-panel{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(21, 20, 20);
+}
+.navlink-about{
+  text-decoration: none;
+  color: rgb(206, 202, 202);
+}
+
+
+
+/* ------------------------------------responsive-------------------------------------- */
+@media screen and (max-width : 600px) 
+{
+  .footer_panel{
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  .footer-head{
+    text-align: center;
+  }
+  .footer-content{
+    text-align: center;
+    font-weight: 500;
+  }
+  .img-flex{
+    justify-content: center;
+  }
+  .foot-btn{
+    display: none;
+    font-size: 10px;
+  }
+  .in-foot{
+    gap: 10px;
+    width: 300px;
+  }
+  .footer-outer-panel{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*------------------------------------------------------------sweetalert2--success---------------------------------------------*/.my-custom-popup-class {
+  width: 400px; /* Adjust the width as needed */
+  height: 130px;
+  background-color: black;
+}
+
+/* Custom styles for the title */
+.my-custom-title-class {
+  color: white; /* Change the title text color */
+  background-color: green; /* Change the title background color */
+  padding-bottom: 15px;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.1em;
+}
+
+/* Custom styles for the content */
+.my-custom-content-class {
+  color: white; /* Change the content text color */
+  background-color: green; /* Change the content background color */
+}
+
+/* Custom style for the progress bar */
+.swal2-progress-bar {
+  color: green; /* Change the progress bar color */
+}
+
+.progress-bar{
+  color: green;
+  background-color: green;
+}
+
+/*------------------------------------sweetalert--error-----------------------------------------------------------*/
+.my-custom-popup-class-error {
+  width: 400px; /* Adjust the width as needed */
+  height: 130px;
+  background-color: black;
+}
+
+/* Custom styles for the title */
+.my-custom-title-class-error {
+  color: white; /* Change the title text color */
+  background-color: red; /* Change the title background color */
+  padding-bottom: 15px;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.1em;
+}
+
+/* Custom styles for the content */
+.my-custom-content-class-error {
+  color: white; /* Change the content text color */
+  background-color: red; /* Change the content background color */
+}
+
+/* Custom style for the progress bar */
+.swal2-progress-bar {
+  color: red; /* Change the progress bar color */
+}
+
+.progress-bar-error{
+  color: red;
+  background-color:red;
+}

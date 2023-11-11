@@ -1,0 +1,115 @@
+.body{
+    background-color:rgb(0, 0, 0);
+    padding: 60px;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding: 50px;
+}
+.terms{
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 50px;
+    margin-top: 50px;
+
+}
+.about{
+    text-align: center;
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 600;
+}
+.content{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding: 30px;   
+}
+
+
+.one{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 50px;
+    margin-top: 50px;
+    gap:40px;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    color:white;
+}
+
+.title{
+    text-align: left;
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.left, .right{
+    flex: 1;
+}
+
+.order-content{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    padding: 50px;
+    margin-top: 50px;
+}
+.faq-title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 600;
+}
+.faq-question{
+    text-align: left;
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.faq-answer{
+    text-align: left;
+    font-family: monospace;
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.faq-content{
+    color: black;
+}
