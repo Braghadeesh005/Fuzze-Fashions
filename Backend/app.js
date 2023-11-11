@@ -14,6 +14,13 @@ dotenv.config();
 // Google Auth - passport
 app.use(passport.initialize());
  
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://fuzze-fashions.netlify.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 //cors gateway to client
 // app.use(cors());
 app.use(
