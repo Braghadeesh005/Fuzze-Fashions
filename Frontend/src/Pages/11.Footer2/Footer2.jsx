@@ -41,7 +41,7 @@ const Footer = () => {
   const handleGoogleAuthClick = () => {
     // Redirect to the Google authentication URL
     window.open(
-      `http://localhost:4000/auth/google/signup/callback`,
+      `https://fuzzefashions.onrender.com/auth/google/signup/callback`,
       '_self'
     );
     localStorage.setItem('isLoggedIn', true);
@@ -57,7 +57,7 @@ const Footer = () => {
   {
      e.preventDefault();
      const { message } = user;
-     const res = await fetch("http://localhost:4000/submit-review", {
+     const res = await fetch("https://fuzzefashions.onrender.com/submit-review", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json"

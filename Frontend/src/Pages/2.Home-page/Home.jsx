@@ -74,7 +74,7 @@ const Home = () => {
     fetchUsers();
   }, []); 
   useEffect(() => {
-    axios.get('http://localhost:4000/product/images')
+    axios.get('https://fuzzefashions.onrender.com/product/images')
       .then((response) => {
         setImages(response.data);
       })
@@ -83,7 +83,7 @@ const Home = () => {
       });
   }, []);
   const fetchUsers = async () => {
-    const response = await axios.get('http://localhost:4000/products');
+    const response = await axios.get('https://fuzzefashions.onrender.com/products');
     setImages(response.data);
   }; 
   const filteredImages = images.filter((image) => {

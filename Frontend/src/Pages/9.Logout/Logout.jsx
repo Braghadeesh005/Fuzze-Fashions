@@ -4,7 +4,7 @@ const Logout = () => {
 
     const Navigate = useNavigate();
     useEffect(()=>{
-        fetch('http://localhost:4000/logout1',{
+        fetch('https://fuzzefashions.onrender.com/logout1',{
             method: "GET",
             headers:{
                 Accept: "application/json",

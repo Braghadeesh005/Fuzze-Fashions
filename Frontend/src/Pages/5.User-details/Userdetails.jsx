@@ -14,7 +14,7 @@ const Userdetails = () => {
   const [userData, setuserData] = useState({});
   const userPage = async () =>{
     try{ 
-      const res = await fetch('http://localhost:4000/getData',{
+      const res = await fetch('https://fuzzefashions.onrender.com/getData',{
         method:"GET",
         headers:{
           Accept:"application/json",
@@ -42,7 +42,7 @@ const Userdetails = () => {
   const [orderHistory, setOrderHistory] = useState([]);
   useEffect(() => {
   
-    fetch("http://localhost:4000/orderitems", {
+    fetch("https://fuzzefashions.onrender.com/orderitems", {
       method: 'GET',
       credentials: 'include', 
     })

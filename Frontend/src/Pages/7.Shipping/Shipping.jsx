@@ -16,7 +16,7 @@ const Shipping = () =>
   
   const userPage = async () =>{
     try{ 
-      const res = await fetch('http://localhost:4000/getData',{
+      const res = await fetch('https://fuzzefashions.onrender.com/getData',{
         method:"GET",
         headers:{
           Accept:"application/json",
@@ -86,7 +86,7 @@ const Shipping = () =>
       const {  phone, address, pincode, state, country } = user;
  
        // Post shipping details
-       const res = await fetch("http://localhost:4000/checkout", {
+       const res = await fetch("https://fuzzefashions.onrender.com/checkout", {
          method: "POST",
          headers: {
            "Content-Type": "application/json",
@@ -105,8 +105,8 @@ const Shipping = () =>
       
       //Razorpay  
       const amount = userData.total_amount;
-      const {data:{key}}=await axios.get("http://localhost:4000/api/getkey")
-      const {data:{order}}=await axios.post("http://localhost:4000/checkout1",{amount})
+      const {data:{key}}=await axios.get("https://fuzzefashions.onrender.com/api/getkey")
+      const {data:{order}}=await axios.post("https://fuzzefashions.onrender.com/checkout1",{amount})
       console.log(window);
       const options ={
         key,
@@ -116,7 +116,7 @@ const Shipping = () =>
         description:"Pay using your preferred payment method",
         image:"https://res.cloudinary.com/ds6pcfz7u/image/upload/v1698600578/logo_tgbpsi.png",
         order_id:order.id,
-        callback_url:"http://localhost:4000/paymentverification",
+        callback_url:"https://fuzzefashions.onrender.com/paymentverification",
         prefill:{
           name:"Enter your name",
           email:"Enter your email",

@@ -19,7 +19,7 @@ function Dynamicproduct() {
     //Fetch Data from backend (all products)
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/dynamicproduct/${id}`);
+        const response = await axios.get(`https://fuzzefashions.onrender.com/api/dynamicproduct/${id}`);
         setproduct(response.data);
       } catch (error) {
         console.error('Error fetching employee details:', error);
@@ -32,7 +32,7 @@ function Dynamicproduct() {
   const fetchImages = async () => {
     try {
       await fetchData(); // Wait for "block 1" to complete before fetching images
-      const response = await axios.get('http://localhost:4000/product/images');
+      const response = await axios.get('https://fuzzefashions.onrender.com/product/images');
       setImages(response.data);
     } catch (error) {
       console.log(error);
@@ -45,7 +45,7 @@ function Dynamicproduct() {
 
   const fetchUsers = async () => {
   try {
-    const response = await axios.get('http://localhost:4000/products');
+    const response = await axios.get('https://fuzzefashions.onrender.com/products');
     setImages(response.data);
   } catch (error) {
     console.error('Error fetching products:', error);
@@ -82,7 +82,7 @@ function Dynamicproduct() {
   const addToCart = async () => {
     try {
       const discounted_price = (product.price) * ((100-product.discount)/100)
-      const response = await fetch('http://localhost:4000/addtocart', {
+      const response = await fetch('https://fuzzefashions.onrender.com/addtocart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

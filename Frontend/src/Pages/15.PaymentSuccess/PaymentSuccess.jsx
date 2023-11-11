@@ -6,7 +6,7 @@ const PaymentSuccess = () => {
 
   const PostData = async () => {
   try {
-    await fetch("http://localhost:4000/decrementproduct", {
+    await fetch("https://fuzzefashions.onrender.com/decrementproduct", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

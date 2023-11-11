@@ -13,7 +13,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleGoogleAuthClick = () => {
-    window.open(`http://localhost:4000/auth/google/signup/callback`,'_self');
+    window.open(`https://fuzzefashions.onrender.com/auth/google/signup/callback`,'_self');
   };
 
 
@@ -53,7 +53,7 @@ const Login = () => {
         return;
       }
 
-      axios.post('http://localhost:4000/user-register', formData, {
+      axios.post('https://fuzzefashions.onrender.com/user-register', formData, {
         withCredentials: true,
       })
       .then((response) => {
@@ -91,7 +91,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:4000/user-login', formData1, {
+    axios.post('https://fuzzefashions.onrender.com/user-login', formData1, {
       withCredentials: true,
     })
     .then((response) => {

@@ -18,7 +18,7 @@ app.use(passport.initialize());
 // app.use(cors());
 app.use(
     cors({
-      origin: ["http://localhost:3000"],
+      origin: ["https://fuzze-fashions.netlify.app/"],
       methods: ["GET", "POST", "PUT", "UPDATE", "DELETE"],
       credentials: true,
       allowedHeaders: ["Content-Type", "Authorization"],
@@ -85,7 +85,7 @@ app.post("/paymentverification",async(req,res)=>{
   await Payment.create({
       razorpay_order_id,razorpay_payment_id,razorpay_signature 
   })
-  res.redirect(`http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`)
+  res.redirect(`https://fuzze-fashions.netlify.app/paymentsuccess?reference=${razorpay_payment_id}`)
  }
  else{
   res.status(400).json({success:false});

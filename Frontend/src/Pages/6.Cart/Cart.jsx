@@ -35,7 +35,7 @@ const Cart = () => {
 
   const fetchCartItems = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/cartitems', {
+      const response = await axios.get('https://fuzzefashions.onrender.com/cartitems', {
         withCredentials: true,
       });
       const cartItems = response.data.map((item) => ({
@@ -50,7 +50,7 @@ const Cart = () => {
 
   const handleDelete = async (userId) => {
     const response = await axios.delete(
-      `http://localhost:4000/cartitems/${userId}`,
+      `https://fuzzefashions.onrender.com/cartitems/${userId}`,
       {
         withCredentials: true,
       }
@@ -63,7 +63,7 @@ const Cart = () => {
   const [userData, setUserData] = useState({});
   const userPage = async () => {
     try {
-      const res = await fetch('http://localhost:4000/getData', {
+      const res = await fetch('https://fuzzefashions.onrender.com/getData', {
         method: 'GET',
         headers: {
           Accept: 'application/json',
@@ -98,7 +98,7 @@ const Cart = () => {
 
       // Make a POST request to update the cart
       const response = await axios.post(
-        'http://localhost:4000/updateCart',
+        'https://fuzzefashions.onrender.com/updateCart',
         { cart: cartData, total },
         {
           withCredentials: true,

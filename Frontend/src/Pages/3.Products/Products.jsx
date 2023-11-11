@@ -24,7 +24,7 @@ function Products() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/product/images')
+      .get('https://fuzzefashions.onrender.com/product/images')
       .then((response) => {
         const data = response.data;
         setImages(data);
@@ -36,7 +36,7 @@ function Products() {
   }, []);
 
   const fetchUsers = async () => {
-    const response = await axios.get('http://localhost:4000/products');
+    const response = await axios.get('https://fuzzefashions.onrender.com/products');
     setImages(response.data);
     setOriginalImages(response.data);
   };
